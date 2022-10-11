@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter' ,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    font-weight: 400;
+    min-width: 600px;
+    font-size: 16px;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+#home {
+    background-color: #d2e8be;
+    height: 660px;
+}
+
+.judul {
+    float: left;
+    flex-basis: 60%;
+    overflow: hidden;
+    padding: 70px 70px;
+    background-color: #d2e8be;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    line-height: 65px;
+    font-weight: normal;
+    color: black;
+    font-size: 48px;
+}
+
+.nama {
+    font-weight: 700;
+    background-color: #a5d67e;
+    padding: 0 10px;
+    color: #2a3a21;
+}
+
+.text-describe {
+    font-family: "Inter", sans-serif;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    margin: 30px 0;
+}
+
+.job {
+    color: #2a3a21;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #a5d67e;
+}
+
+aside {
+    float: right;
+    flex-basis: 40%;
+}
+
+aside img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-bottom-left-radius: 100px;
+    background-color: #a5d67e;
+}
+
+.card {
+    display: flex;
+    background-color: #d2e8be;
+
+}
+
+.job-left {
+    float: left;
+    width: 40%;
+    background-color: #a5d67e;
+    padding: 70px;
+}
+
+.job-right {
+    float: right;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    padding: 70px;
+}
+
+table {
+    text-align: left;
+    padding: 0;
+}
+
+th {
+    padding-right: 20px;
+}
+
+tr.space>th,td {
+    padding-top: 1em;
+}
+
+.study-right {
+    float: left;
+    width: 40%;
+    background-color: #a5d67e;
+    padding: 70px;
+}
+
+.study-left {
+    float: right;
+    width: 60%;
+    background-color: white;
+    padding: 70px;
+}
+
+.formal {
+    margin-bottom: 70px;
+}
+
+#apps {
+    padding: 70px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.component {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    margin-right: 10px;
+    padding: 40px;
+    background: whitesmoke;
+    overflow: hidden;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.component img {
+    object-position: center;
+}
+
+h4 {
+    color: #111111;
+    text-align: center;
+}
+
+#kontak {
+    padding: 70px;
+    background-color: #04AA6D;
+}
+
+#kontak h2 {
+    color: white;
+}
+
+.table-kontak {
+    padding: 0 30px;
+}
+
+.table-kontak th {
+    padding: 0 15px;
+}
+
+.table-kontak a {
+    color: white;
+    background-color: #111;
+}
+
+footer {
+    color: white;
+    background-color: #04AA6D;
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+}
+
+@media only screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+}
+
+@media only screen and (max-width:855px) {
+    #home {
+        height: auto;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    aside img {
+        border-radius: 0px;
+    }
+
+    #study {
+        flex-direction: column-reverse;
+    }
+
+    .judul, aside {
+        width: 100%;
+    }
+
+    .job-left, .job-right {
+        float: none;
+        width: 100%;
+        background-color: white;
+        padding: 0 70px;
+    }
+
+    .job-right {
+        padding-bottom: 70px;
+    }
+
+    .study-left, .study-right {
+        float: none;
+        width: 100%;
+        background-color: white;
+        padding: 0 70px;
+    }
+
+    .job-right {
+        padding-bottom: 70px;
+    }
+
+    .judul-section {
+        text-align: center;
+    }
+}
